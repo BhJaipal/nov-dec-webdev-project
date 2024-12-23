@@ -1,0 +1,48 @@
+@media screen and (max-width: 649px) {
+	.model {
+		top: 35vh;
+		left: 5vw;
+		width: 80vw;
+		padding: 30px 20px;
+	}
+}
+
+@media screen and (min-width: 549px) and (max-width: 649px) {
+	.model {
+		top: 35vh;
+		left: calc(10vw - 20px);
+		width: 80vw;
+		padding: 30px 20px;
+	}
+}
+@media screen and (min-width: 649px) and (max-width: 949px) {
+	.model {
+		top: 35vh;
+		left: 12vw;
+		width: 60vw;
+		padding: 30px 10%;
+	}
+}
+@media screen and (min-width: 949px) and (max-width: 1199px) {
+	.model {
+		top: 35vh;
+		left: 20vw;
+		width: 40vw;
+		padding: 10vh 10vw;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.model {
+		top: 35vh;
+		left: 30vw;
+		width: 30vw;
+		padding: 100px;
+	}
+}
+
+.model {
+	position: fixed;
+	z-index: 10;
+	background-color: rgba(0, 0, 0, 0.85);
+	backdrop-filter: blur(3px);
+}

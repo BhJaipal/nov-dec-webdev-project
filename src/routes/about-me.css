@@ -1,0 +1,58 @@
+#aboutme {
+	width: max-content;
+	height: 55vh;
+	margin: 7vw;
+	padding: 20px;
+	text-align: center;
+	border-radius: 10px;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+	background-color: rgba(128, 128, 128, 0.336);
+	color: white;
+}
+.pfp-logo {
+	height: 40vh;
+	width: auto;
+}
+
+@media screen and (max-width: 550px) {
+	#aboutme {
+		width: 70vw;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+	}
+	.pfp-logo {
+		width: 100%;
+		height: auto;
+	}
+}
+@media screen and (max-width: 650px) and (min-width: 551px) {
+	#aboutme {
+		width: 80vw;
+		height: max-content;
+	}
+}
+@media screen and (max-width: 1000px) and (min-width: 651px) {
+	#aboutme {
+		width: 70vw;
+		height: min-content;
+	}
+}
+.key {
+	font-weight: bold;
+	&::after {
+		content: ": ";
+	}
+}
+.color-1 {
+	color: rgb(253, 99, 99);
+}
+.color-2 {
+	color: rgb(121, 207, 121);
+}
+.color-3 {
+	color: rgb(121, 173, 207);
+}

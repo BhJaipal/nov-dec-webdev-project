@@ -1,0 +1,178 @@
+body {
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: start;
+	font-family: "Courier New", Courier, monospace;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	overflow-x: hidden;
+}
+body:not(.light) {
+	background-image: linear-gradient(
+			45deg,
+			rgba(0, 0, 0, 0.6),
+			rgba(0, 0, 0, 0.6)
+		),
+		url(/Pop!_OS_Wallpaper.png);
+}
+body:not(.grey-1) {
+	background-image: linear-gradient(
+			45deg,
+			rgba(0, 0, 0, 0.6),
+			rgba(0, 0, 0, 0.6)
+		),
+		url(/Pop!_OS_Wallpaper.png);
+}
+body:not(.grey-2) {
+	background-image: linear-gradient(
+			45deg,
+			rgba(0, 0, 0, 0.6),
+			rgba(0, 0, 0, 0.6)
+		),
+		url(/Pop!_OS_Wallpaper.png);
+}
+body:not(.grey-3) {
+	background-image: linear-gradient(
+			45deg,
+			rgba(0, 0, 0, 0.6),
+			rgba(0, 0, 0, 0.6)
+		),
+		url(/Pop!_OS_Wallpaper.png);
+}
+body:not(.grey-4) {
+	background-image: linear-gradient(
+			45deg,
+			rgba(0, 0, 0, 0.6),
+			rgba(0, 0, 0, 0.6)
+		),
+		url(/Pop!_OS_Wallpaper.png);
+}
+body:not(.grey-5) {
+	background-image: linear-gradient(
+			45deg,
+			rgba(0, 0, 0, 0.6),
+			rgba(0, 0, 0, 0.6)
+		),
+		url(/Pop!_OS_Wallpaper.png);
+}
+
+body.light *,
+body.grey-1 *,
+body.grey-2 *,
+body.grey-3 * {
+	color: black;
+}
+body.grey-4 *,
+body.grey-5 * {
+	color: white;
+}
+nav {
+	width: 100vw;
+	color: white;
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+	margin-top: 5vh;
+	display: grid;
+	backdrop-filter: blur(3px);
+	grid-template-columns: 1fr 1fr;
+	background-color: rgba(128, 128, 128, 0.178);
+}
+#logo {
+	font-size: 30px;
+	font-weight: bold;
+	margin-left: 5%;
+}
+#links {
+	display: flex;
+	flex-direction: row;
+	justify-content: end;
+	padding-right: 3vw;
+	column-gap: 2vw;
+}
+.nav-items {
+	padding: 10px;
+	border-radius: 5px;
+	align-content: center;
+	cursor: pointer;
+}
+body.light a,
+body.grey-1 a,
+body.grey-2 a,
+body.grey-3 a {
+	color: black;
+}
+body.grey-4 a,
+body.grey-5 a {
+	color: white;
+}
+body.light a:hover,
+body.grey-1 a:hover,
+body.grey-2 a:hover,
+body.grey-3 a:hover {
+	color: black;
+}
+body.grey-4 a:hover,
+body.grey-5 a:hover {
+	color: white;
+}
+.nav-items a {
+	color: white;
+}
+.nav-items:hover a {
+	color: white;
+}
+.nav-items:hover {
+	background-color: rgba(128, 128, 128, 0.192);
+	text-decoration: underline;
+}
+@media screen and (max-width: 400px) {
+	nav {
+		margin-top: 0vh;
+		grid-template-columns: none;
+		flex-direction: column;
+		display: flex;
+		padding-top: 1vh;
+		text-align: left;
+		padding-bottom: 0px;
+	}
+	#links {
+		justify-content: center;
+		flex-direction: column;
+		display: none;
+		height: 0px;
+	}
+	.show {
+		height: auto;
+		display: block;
+	}
+	#logo-btn {
+		padding-bottom: 1vh;
+		display: flex;
+		align-content: center;
+		padding-left: 0%;
+		appearance: none;
+		border: none;
+		background: transparent;
+		color: white;
+		font-size: 30px;
+		font-weight: bold;
+		cursor: pointer;
+	}
+	nav:hover #links {
+		display: block;
+		height: auto;
+	}
+}
+@media screen and (min-width: 401px) {
+	#links {
+		display: flex;
+		flex-direction: row;
+		justify-content: end;
+		padding-right: 3vw;
+		column-gap: 2vw;
+	}
+}
